@@ -1,0 +1,13 @@
+C:\StudyWPF\ArduinoApp\TestApp\obj\Debug\MainWindow.g.cs
+C:\StudyWPF\ArduinoApp\TestApp\obj\Debug\App.g.cs
+C:\StudyWPF\ArduinoApp\TestApp\obj\Debug\TestApp_MarkupCompile.cache
+C:\StudyWPF\ArduinoApp\TestApp\bin\Debug\TestApp.exe.config
+C:\StudyWPF\ArduinoApp\TestApp\bin\Debug\TestApp.exe
+C:\StudyWPF\ArduinoApp\TestApp\bin\Debug\TestApp.pdb
+C:\StudyWPF\ArduinoApp\TestApp\obj\Debug\MainWindow.baml
+C:\StudyWPF\ArduinoApp\TestApp\obj\Debug\TestApp.g.resources
+C:\StudyWPF\ArduinoApp\TestApp\obj\Debug\TestApp.Properties.Resources.resources
+C:\StudyWPF\ArduinoApp\TestApp\obj\Debug\TestApp.csproj.GenerateResource.cache
+C:\StudyWPF\ArduinoApp\TestApp\obj\Debug\TestApp.csproj.CoreCompileInputs.cache
+C:\StudyWPF\ArduinoApp\TestApp\obj\Debug\TestApp.exe
+C:\StudyWPF\ArduinoApp\TestApp\obj\Debug\TestApp.pdb

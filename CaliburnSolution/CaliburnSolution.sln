@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartCaliburnApp", "StartCaliburnApp\StartCaliburnApp.csproj", "{E9DF3EB8-C207-4812-8F27-F8BBAEC58C2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMvvmApp", "..\WpfMvvmApp\WpfMvvmApp\WpfMvvmApp.csproj", "{CBA54763-3E4B-4EC0-8B1B-8899461EE4EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondCaliburnApp", "SecondCaliburnApp\SecondCaliburnApp.csproj", "{E65E4E16-F81F-477D-ACAA-E07CE15EC610}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfChartApp", "WpfChartApp\WpfChartApp.csproj", "{741FD23D-B1A8-4048-A67B-EE91789FEE8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdCaliburnApp", "ThirdCaliburnApp\ThirdCaliburnApp.csproj", "{E639114F-8B79-487D-B375-8842E6063EC4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9DF3EB8-C207-4812-8F27-F8BBAEC58C2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9DF3EB8-C207-4812-8F27-F8BBAEC58C2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9DF3EB8-C207-4812-8F27-F8BBAEC58C2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9DF3EB8-C207-4812-8F27-F8BBAEC58C2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBA54763-3E4B-4EC0-8B1B-8899461EE4EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBA54763-3E4B-4EC0-8B1B-8899461EE4EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBA54763-3E4B-4EC0-8B1B-8899461EE4EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBA54763-3E4B-4EC0-8B1B-8899461EE4EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E65E4E16-F81F-477D-ACAA-E07CE15EC610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E65E4E16-F81F-477D-ACAA-E07CE15EC610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E65E4E16-F81F-477D-ACAA-E07CE15EC610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E65E4E16-F81F-477D-ACAA-E07CE15EC610}.Release|Any CPU.Build.0 = Release|Any CPU
+		{741FD23D-B1A8-4048-A67B-EE91789FEE8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{741FD23D-B1A8-4048-A67B-EE91789FEE8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{741FD23D-B1A8-4048-A67B-EE91789FEE8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{741FD23D-B1A8-4048-A67B-EE91789FEE8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E639114F-8B79-487D-B375-8842E6063EC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E639114F-8B79-487D-B375-8842E6063EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E639114F-8B79-487D-B375-8842E6063EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E639114F-8B79-487D-B375-8842E6063EC4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84F3959A-ED99-4B5F-B76E-F65797B237C0}
+	EndGlobalSection
+EndGlobal

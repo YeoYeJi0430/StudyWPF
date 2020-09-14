@@ -1,0 +1,58 @@
+﻿<mah:MetroWindow x:Class="MvvmChartApp.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:local="clr-namespace:MvvmChartApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="720" Width="1280"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <mah:MetroWindow.IconTemplate>
+        <DataTemplate>
+            <!--아이콘-->
+        </DataTemplate>
+    </mah:MetroWindow.IconTemplate>
+    <DockPanel>
+        <Grid DockPanel.Dock="Top">
+            <StackPanel>
+                <Menu IsMainMenu="True">
+                    <MenuItem Header="_Chart">
+                        <MenuItem.Icon>
+                            <!--아이콘-->
+                            <iconPacks:PackIconBoxIcons Kind="RegularBarChartAlt2" />
+                        </MenuItem.Icon>
+                        
+                        <MenuItem x:Name="LoadLineChart" Header="Line Chart">
+                            <MenuItem.Icon>
+                                <iconPacks:PackIconBoxIcons Kind="RegularLineChart" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+
+                        <MenuItem Header="Pie Chart">
+                            <MenuItem.Icon>
+                                <iconPacks:PackIconBoxIcons Kind="SolidPieChartAlt2" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem x:Name="LoadGaugeChart" Header="Gauge Chart">
+                            <MenuItem.Icon>
+                                <iconPacks:PackIconEntypo Kind="Gauge" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <Separator />
+                        <MenuItem x:Name="ExitProgram" Header="_Exit">
+                            <MenuItem.Icon>
+                                <iconPacks:PackIconBoxIcons Kind="SolidDoorOpen" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </MenuItem>
+                    <MenuItem Header="_LiveChart"></MenuItem>
+                </Menu>
+            </StackPanel>
+        </Grid>
+        <Grid Background="PapayaWhip">
+            <ContentControl x:Name="ActiveItem"/><!--여러개 부를때 컨트롤-->
+        </Grid>
+    </DockPanel>
+</mah:MetroWindow>

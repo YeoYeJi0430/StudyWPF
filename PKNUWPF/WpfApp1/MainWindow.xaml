@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Simple Window" Height="720" Width="1280">
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Width="200">
+        <!--Orientation="Horizontal" : 버튼들 수평으로, Vertical : 수직-->
+        <!--HorizontalAlignment="Center" : 버튼들 center로!-->
+        <TextBlock TextWrapping="Wrap" Text="TestBlock" 
+                   Height="40" Margin="10,25,5,15" Width="100"/>
+        <!--Margin="10,25" : 콤마 개수 따라 left,Top,Right,Bottom 다르게 나옴,속성창 확인-->
+        <TextBox x:Name="TxtNames" Height="35" TextWrapping="Wrap" 
+                 Text="Input something" Margin="10"/>
+        <!--TextBox x:Name=속성 : 이름-->
+        <ProgressBar x:Name="PgbTest" Height="10" Margin="10" Minimum="0" 
+                     Maximum="100" Value="60"/>
+        <Slider Height="40" Margin="10"/>
+        <PasswordBox PasswordChar="★" Password="Test" Height="30" Margin="10"/>
+
+    </StackPanel>
+</Window>

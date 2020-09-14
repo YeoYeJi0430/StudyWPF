@@ -1,0 +1,15 @@
+C:\StudyWPF\PKNUWPF\PKNUWPF\bin\Debug\PKNUWPF.exe.config
+C:\StudyWPF\PKNUWPF\PKNUWPF\bin\Debug\PKNUWPF.exe
+C:\StudyWPF\PKNUWPF\PKNUWPF\bin\Debug\PKNUWPF.pdb
+C:\StudyWPF\PKNUWPF\PKNUWPF\obj\Debug\PKNUWPF.csprojAssemblyReference.cache
+C:\StudyWPF\PKNUWPF\PKNUWPF\obj\Debug\MainWindow.g.cs
+C:\StudyWPF\PKNUWPF\PKNUWPF\obj\Debug\App.g.cs
+C:\StudyWPF\PKNUWPF\PKNUWPF\obj\Debug\PKNUWPF_MarkupCompile.cache
+C:\StudyWPF\PKNUWPF\PKNUWPF\obj\Debug\PKNUWPF_MarkupCompile.lref
+C:\StudyWPF\PKNUWPF\PKNUWPF\obj\Debug\MainWindow.baml
+C:\StudyWPF\PKNUWPF\PKNUWPF\obj\Debug\PKNUWPF.g.resources
+C:\StudyWPF\PKNUWPF\PKNUWPF\obj\Debug\PKNUWPF.Properties.Resources.resources
+C:\StudyWPF\PKNUWPF\PKNUWPF\obj\Debug\PKNUWPF.csproj.GenerateResource.cache
+C:\StudyWPF\PKNUWPF\PKNUWPF\obj\Debug\PKNUWPF.csproj.CoreCompileInputs.cache
+C:\StudyWPF\PKNUWPF\PKNUWPF\obj\Debug\PKNUWPF.exe
+C:\StudyWPF\PKNUWPF\PKNUWPF\obj\Debug\PKNUWPF.pdb
