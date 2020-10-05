@@ -1,0 +1,36 @@
+﻿<mah:MetroWindow x:Class="ArduinoMonitoringApp.Views.InfoView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+      xmlns:helps="clr-namespace:ArduinoMonitoringApp.Helpers"
+      xmlns:local="clr-namespace:ArduinoMonitoringApp.Views"
+      WindowTitleBrush="LightPink" GlowBrush="LightPink"
+      Height="300" Width="600"
+      Title="InfoView">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="0" Grid.RowSpan="6">
+            <Image Source="C:\Users\dpwl4\Desktop\Wpf\View.png"/>
+        </Grid>
+        <TextBlock x:Name="AssemblyProduct" Grid.Row="0" Grid.Column="1" FontSize="15" Margin="0,10,0,0"/>
+        <TextBlock x:Name="AssemblyVersion" Grid.Row="1" Grid.Column="1" FontSize="15" Margin="0,10,0,0"/>
+        <TextBlock x:Name="AssemblyCopyright" Grid.Row="2" Grid.Column="1" FontSize="15" Margin="0,10,0,0"/>
+        <TextBlock x:Name="AssemblyCompany" Grid.Row="3" Grid.Column="1" FontSize="15" Margin="0,10,0,0"/>
+        <TextBlock x:Name="AssemblyDescription" Grid.Row="4" Grid.Column="1" FontSize="15" Margin="0,10,0,0"
+                   helps:TextBoxBehaviors.AutoScrollToEnd="True" TextWrapping="WrapWithOverflow"/>
+    </Grid>
+</mah:MetroWindow>
