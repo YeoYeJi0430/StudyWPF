@@ -24,9 +24,9 @@ namespace ArduinoApp.ViewModels
 {
     public class MainViewModel : Conductor<object>
     {
-       
+
         #region 시리얼
-        
+
         private ObservableCollection<string> portNames;
         public ObservableCollection<string> PortNames
         {
@@ -34,6 +34,16 @@ namespace ArduinoApp.ViewModels
             set
             {
                 portNames = value;
+            }
+        }
+
+        private ObservableCollection<SensorData> sensorDatas;
+        public ObservableCollection<SensorData> SensorDatas
+        {
+            get => sensorDatas;
+            set
+            {
+                sensorDatas = value;
             }
         }
 
@@ -50,20 +60,16 @@ namespace ArduinoApp.ViewModels
 
         public SerialPort Sport { get; set; }
 
-        public void Connect(object obj)
+        public void Connect()
         {
-            Sport.PortName = Port;
-            Sport.BaudRate = 9600;
             Sport.Open();
         }
-
-        private void AddPortNames(ObservableCollection<string> list)
+        private bool CanConnect(object obj)
         {
-            foreach (var item in SerialPort.GetPortNames())
-            {
-                list.Add(item);
-            }
+            return true;
         }
+
+
 
         public short sensorVal;
         public short SensorVal
@@ -76,15 +82,37 @@ namespace ArduinoApp.ViewModels
             }
         }
 
+        //Seval
+        private string seval;
+        public string Seval
+        {
+            get => seval;
+            set
+            {
+                seval = value;
+                NotifyOfPropertyChange();
+            }
+        }
+
         private void SerialDataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             string datas = Sport.ReadLine();
+            short value = short.Parse(datas);
+            SensorData data = new SensorData(DateTime.Now, value);
+            photoDatas.Add(data);
 
-            short value = short.Parse(datas);   
-            //SensorData data = new SensorData(DateTime.Now, value);
-            //photoDatas.Add(data);
-            sensorVal = value;
+            SensorVal = value;
+            //Seval = $"{value}";
+            LblPhotoRegistor = value.ToString();
 
+        }
+
+        private void AddPortNames(ObservableCollection<string> list)
+        {
+            foreach (var item in SerialPort.GetPortNames())
+            {
+                list.Add(item);
+            }
         }
 
         public void Sfunc()
@@ -92,11 +120,13 @@ namespace ArduinoApp.ViewModels
             PortNames = new ObservableCollection<string>();
             AddPortNames(PortNames);
 
+            SensorDatas = new ObservableCollection<SensorData>();
+
             Sport = new SerialPort();
             Sport.DataReceived += SerialDataReceived;
         }
 
-      
+
 
         #endregion
 
@@ -137,20 +167,22 @@ namespace ArduinoApp.ViewModels
                 NotifyOfPropertyChange();
             }
         }
+
+        //    //생성자
         public MainViewModel()
         {
             //Sfunc();
             ChartVal = new SeriesCollection
-            {
-                new LineSeries
                 {
-                    Title = "PotoValue",
-                    Values = new ChartValues<int>{ },
-                    Fill = Brushes.Transparent,
-                    Stroke = Brushes.Teal,
-                    PointGeometrySize = 6
-                }
-            };
+                    new LineSeries
+                    {
+                        Title = "PotoValue",
+                        Values = new ChartValues<int>{ },
+                        Fill = Brushes.Transparent,
+                        Stroke = Brushes.Teal,
+                        PointGeometrySize = 6
+                    }
+                };
 
         }
         public override string DisplayName { get; set; }

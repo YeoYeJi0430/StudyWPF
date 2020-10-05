@@ -30,8 +30,8 @@
                 <MenuItem Header="끝내기"/>
             </MenuItem>
             <MenuItem Width="76" Header="시뮬레이션">
-                <MenuItem x:Name="Start"  Header="시작"/>
-                <MenuItem x:Name="Stop" Header="중지"/>
+                <MenuItem x:Name="Start"  Header="시작" Click="Start_Click"/>
+                <MenuItem x:Name="Stop" Header="중지" Click="Stop_Click"/>
             </MenuItem>
             <MenuItem Header="도움말">
                 <MenuItem x:Name="Info" Header="정보"/>
@@ -49,7 +49,7 @@
 
         <StackPanel Grid.Row="1" Grid.Column="1" Margin="25">
             <TextBlock TextAlignment="Right" Margin="20,0,20,5" FontSize="12">연결시간</TextBlock>
-            <TextBox x:Name="SensorCount" Margin="10" TextAlignment="Right"/>
+            <TextBox x:Name="TxtSensorCount" Margin="10" TextAlignment="Right" />
             <GroupBox Grid.Column="1" Margin="10,10,10.4,10" Foreground="Black" mah:HeaderedControlHelper.HeaderBackground="LightPink" BorderBrush="LightPink" Height="103">
                 <StackPanel>
                     <TextBlock Height="25" Text="포토레지스터" TextAlignment="Center"/>
@@ -58,19 +58,20 @@
                     <TextBox x:Name="LblPhotoRegistor" TextAlignment="Center"/>
                 </StackPanel>
             </GroupBox>
-            <TextBox x:Name="Board" Height="140" Margin="10" VerticalScrollBarVisibility="Auto"
+            <TextBox x:Name="RtbLog" Height="140" Margin="10" VerticalScrollBarVisibility="Auto"
                      helps:TextBoxBehaviors.AutoScrollToEnd="True">
             </TextBox>
         </StackPanel>
         
         <StackPanel Grid.Row="1" Grid.Column="2" Margin="15" >
             <TextBlock TextAlignment="Right" Margin="20,5,5,5" FontSize="13">포트</TextBlock>
-            <ComboBox x:Name="ComboPort" Height="10" Margin="0,14,0,10"
-                      ItemsSource="{Binding PortNames}" SelectedItem="{Binding Port}"/>
+            <ComboBox x:Name="CboSerialPort" Height="10" Margin="0,14,0,10"
+                      ItemsSource="{Binding PortNames}" SelectedItem="{Binding Port}" SelectionChanged="ComboPort_SelectionChanged"/>
             <TextBlock Height="14"/>
-            <Button x:Name="Connect" Height="40" Content="CONNECT" Margin="0,0,0,10"/>
-            <Button Height="40" Content="DISCONNECT" Margin="0,0,0,10"/>
+            <Button x:Name="BtnConnect" Height="40" Content="CONNECT" Margin="0,0,0,10" Click="BtnConnect_Click"/>
+            <Button x:Name="BtnDisconnect" Height="40" Content="DISCONNECT" Margin="0,0,0,10" Click="BtnDisconnect_Click"/>
             <Button Height="60" Content="PORT" Margin="0,0,0,10"/>
+            <TextBox x:Name="Seval"/>
             <!--<Grid Grid.Row="1" Grid.Column="2" Margin="15">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="0.5*"/>

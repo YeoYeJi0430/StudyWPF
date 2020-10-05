@@ -9,14 +9,12 @@ namespace ArduinoApp.Models
     public class SensorData
     {
         public DateTime Date { get; set; }
-        public short Value { get; set; }
-        //public string Time { get; set; }
+        public ushort Value { get; set; }
 
-        public SensorData(DateTime date, short value)
+        public SensorData(DateTime date, ushort value)
         {
             Date = date;
             Value = value;
-            //Time = time;
         }
     }
 }
